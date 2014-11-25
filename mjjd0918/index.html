@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>猛降价到</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <style type="text/css">
+        body,html,canvas{margin: 0;padding: 0;    }
+        canvas{ position: absolute;}
+        .popbox{position: absolute;height: 100%;width: 100%;border-radius: 2px; display:none  ;      }
+        .showbox{ position:absolute;width:253px;left:50%;top:51%; margin:0 0 0 -123px; display:none  ; }
+        a.btn { text-align: center;display: block; background: #72D172; color: #fff; list-style: none;
+            padding: 5px; margin-left: 10px;cursor: pointer;
+            border-radius: 4px;font-weight: bold; border-bottom: 3px solid #32A240; text-decoration: blink;float: left    }
+        a.btn:hover { border-bottom: 1px solid #32A240;      }
+        .context {height: 140px;text-align: center; }
+        .tel{height: 1.4em; width:70%;font-size: 1.2em; text-align: center; border: 1px solid #828282; float: left}
+        span.title { clear: both;float: left; font-size: 22px; color: #E46919;width: 100%;    }
+
+    </style>
+</head>
+<body>
+ <canvas id="mycanvas"></canvas>
+
+ <script  type="text/javascript" src="ccbjs/min/ccbjs.0.5.1.min.js"></script>
+ <!--<script  type="text/javascript" src="ccbjs/core/CCB.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/core/Class.js"></script>-->
+
+ <!--<script type="text/javascript" src="ccbjs/event/Event.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/event/EventDispatcher.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/event/KeyboardEvent.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/event/MouseEvent.js"></script>-->
+
+ <!--<script type="text/javascript" src="ccbjs/display/Blend.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/display/Stage.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/display/DisplayObject.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/display/Sprite.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/display/Group.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/display/TextFile.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/data/animationXMLReader.js"></script>-->
+
+ <!--<script type="text/javascript" src="ccbjs/tween/Tween.js"></script>-->
+
+
+ <!--<script type="text/javascript" src="ccbjs/particle/Particle.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/particle/ParticleStyle.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/particle/ParticleEmitter.js"></script>-->
+
+ <!--<script type="text/javascript" src="ccbjs/sound/Sound.js"></script>-->
+ <!--<script type="text/javascript" src="ccbjs/sound/SoundsManager.js"></script>-->
+ 
+  <script type="text/javascript" src="js/Hero.js"></script>
+ <script type="text/javascript" src="js/Game.js"></script>
+ <script type="text/javascript" src="js/oajax.js"></script>
+
+ <script type="text/javascript" src="Main.js"> </script>
+ <script type="text/javascript">
+     new myGame.Main("mycanvas",640,960);
+//     myGame.Main.curGameScene.start("ffgf");
+ </script>
+    <div id="showbox" class="showbox">
+        <input type="hidden" id="money" name="money" value="0"/>
+        <input class="tel" id="Tel" type="text" placeholder="请输入手机号码"></span>
+        <a   class="btn subTel" id="submit"  href="#" >提交</a>
+    </div>
+</body>
+</html>
